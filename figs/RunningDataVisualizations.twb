@@ -1,0 +1,776 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='greg_runs' inline='true' name='federated.1r7ba0j1oeb9n61d9cets1ifctlz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='greg_runs' name='textscan.1wierb31j4ua0s1gqt4uy1nl8hq6'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='/Users/gregoryknapp/Code/DataScience/MyRunningData/data/greg_runs.csv' dataRefreshTime='' directory='/Users/gregoryknapp/Code/DataScience/MyRunningData/data' filename='/var/folders/ns/52cz2xsx3nv_ncxwvhlz83_m0000gn/T/tableau-temp/0mrb4qk0icebpb1cx16lc16k84j3/greg_runs.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1wierb31j4ua0s1gqt4uy1nl8hq6' name='greg_runs.csv' table='[/Users/gregoryknapp/Code/DataScience/MyRunningData/data/greg_runs#csv]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:O100:no:A1:O100:1' header='yes' locale='ja' separator=','>
+            <column datatype='string' name='name' ordinal='0' />
+            <column datatype='real' name='distance' ordinal='1' />
+            <column datatype='real' name='total_elevation_gain' ordinal='2' />
+            <column datatype='real' name='average_speed' ordinal='3' />
+            <column datatype='real' name='max_speed' ordinal='4' />
+            <column datatype='real' name='elev_high' ordinal='5' />
+            <column datatype='real' name='elev_low' ordinal='6' />
+            <column datatype='integer' name='pr_count' ordinal='7' />
+            <column datatype='real' name='distance_miles' ordinal='8' />
+            <column datatype='datetime' name='moving_time' ordinal='9' />
+            <column datatype='datetime' name='elapsed_time' ordinal='10' />
+            <column datatype='boolean' name='is_gym_run' ordinal='11' />
+            <column datatype='string' name='workout_type' ordinal='12' />
+            <column datatype='date' name='start_date_local' ordinal='13' />
+            <column datatype='datetime' name='start_time_local' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[greg_runs.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ja&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¤&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;XXX&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:O100:no:A1:O100:1&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ja&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[greg_runs.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LJA_RJP' />
+            <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[distance]</local-name>
+            <parent-name>[greg_runs.csv]</parent-name>
+            <remote-alias>distance</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_elevation_gain</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_elevation_gain]</local-name>
+            <parent-name>[greg_runs.csv]</parent-name>
+            <remote-alias>total_elevation_gain</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_speed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_speed]</local-name>
+            <parent-name>[greg_runs.csv]</parent-name>
+            <remote-alias>average_speed</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>max_speed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[max_speed]</local-name>
+            <parent-name>[greg_runs.csv]</parent-name>
+            <remote-alias>max_speed</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>elev_high</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[elev_high]</local-name>
+            <parent-name>[greg_runs.csv]</parent-name>
+            <remote-alias>elev_high</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>elev_low</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[elev_low]</local-name>
+            <parent-name>[greg_runs.csv]</parent-name>
+            <remote-alias>elev_low</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pr_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pr_count]</local-name>
+            <parent-name>[greg_runs.csv]</parent-name>
+            <remote-alias>pr_count</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distance_miles</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[distance_miles]</local-name>
+            <parent-name>[greg_runs.csv]</parent-name>
+            <remote-alias>distance_miles</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>moving_time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[moving_time]</local-name>
+            <parent-name>[greg_runs.csv]</parent-name>
+            <remote-alias>moving_time</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>elapsed_time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[elapsed_time]</local-name>
+            <parent-name>[greg_runs.csv]</parent-name>
+            <remote-alias>elapsed_time</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_gym_run</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[is_gym_run]</local-name>
+            <parent-name>[greg_runs.csv]</parent-name>
+            <remote-alias>is_gym_run</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>workout_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[workout_type]</local-name>
+            <parent-name>[greg_runs.csv]</parent-name>
+            <remote-alias>workout_type</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LJA_RJP' />
+            <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_date_local</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[start_date_local]</local-name>
+            <parent-name>[greg_runs.csv]</parent-name>
+            <remote-alias>start_date_local</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_time_local</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[start_time_local]</local-name>
+            <parent-name>[greg_runs.csv]</parent-name>
+            <remote-alias>start_time_local</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='greg_runs.csv' datatype='table' name='[__tableau_internal_object_id__].[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]' role='measure' type='quantitative' />
+      <column caption='Average Speed' datatype='real' name='[average_speed]' role='measure' type='quantitative' />
+      <column caption='Distance' datatype='real' name='[distance]' role='measure' type='quantitative' />
+      <column caption='Distance Miles' datatype='real' name='[distance_miles]' role='measure' type='quantitative' />
+      <column aggregation='Hour' caption='Elapsed Time' datatype='datetime' name='[elapsed_time]' role='dimension' type='ordinal' />
+      <column caption='Elev High' datatype='real' name='[elev_high]' role='measure' type='quantitative' />
+      <column caption='Elev Low' datatype='real' name='[elev_low]' role='measure' type='quantitative' />
+      <column caption='Is Gym Run' datatype='boolean' name='[is_gym_run]' role='dimension' type='nominal' />
+      <column caption='Max Speed' datatype='real' name='[max_speed]' role='measure' type='quantitative' />
+      <column aggregation='Hour' caption='Moving Time' datatype='datetime' name='[moving_time]' role='dimension' type='ordinal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Pr Count' datatype='integer' name='[pr_count]' role='measure' type='quantitative' />
+      <column caption='Start Date Local' datatype='date' name='[start_date_local]' role='dimension' type='ordinal' />
+      <column aggregation='Hour' caption='Start Time Local' datatype='datetime' name='[start_time_local]' role='dimension' type='ordinal' />
+      <column caption='Total Elevation Gain' datatype='real' name='[total_elevation_gain]' role='measure' type='quantitative' />
+      <column caption='Workout Type' datatype='string' name='[workout_type]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/ns/52cz2xsx3nv_ncxwvhlz83_m0000gn/T/tableau-temp/#TableauTemp_0ge0lan0zysqbl1e73o1s12wm8j9.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/05/2025 11:18:32 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>greg_runs.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>89</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LJA' />
+              <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>distance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[distance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>distance</remote-alias>
+              <ordinal>1</ordinal>
+              <family>greg_runs.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>93</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_elevation_gain</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_elevation_gain]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_elevation_gain</remote-alias>
+              <ordinal>2</ordinal>
+              <family>greg_runs.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>64</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>average_speed</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[average_speed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>average_speed</remote-alias>
+              <ordinal>3</ordinal>
+              <family>greg_runs.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>84</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>max_speed</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[max_speed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>max_speed</remote-alias>
+              <ordinal>4</ordinal>
+              <family>greg_runs.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>70</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>elev_high</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[elev_high]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>elev_high</remote-alias>
+              <ordinal>5</ordinal>
+              <family>greg_runs.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>elev_low</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[elev_low]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>elev_low</remote-alias>
+              <ordinal>6</ordinal>
+              <family>greg_runs.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pr_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[pr_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pr_count</remote-alias>
+              <ordinal>7</ordinal>
+              <family>greg_runs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>distance_miles</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[distance_miles]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>distance_miles</remote-alias>
+              <ordinal>8</ordinal>
+              <family>greg_runs.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>93</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>moving_time</remote-name>
+              <remote-type>134</remote-type>
+              <local-name>[moving_time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>moving_time</remote-alias>
+              <ordinal>9</ordinal>
+              <family>greg_runs.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Hour</aggregation>
+              <approx-count>89</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>elapsed_time</remote-name>
+              <remote-type>134</remote-type>
+              <local-name>[elapsed_time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>elapsed_time</remote-alias>
+              <ordinal>10</ordinal>
+              <family>greg_runs.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Hour</aggregation>
+              <approx-count>87</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_gym_run</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[is_gym_run]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_gym_run</remote-alias>
+              <ordinal>11</ordinal>
+              <family>greg_runs.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>workout_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[workout_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>workout_type</remote-alias>
+              <ordinal>12</ordinal>
+              <family>greg_runs.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LJA' />
+              <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start_date_local</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[start_date_local]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start_date_local</remote-alias>
+              <ordinal>13</ordinal>
+              <family>greg_runs.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>95</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start_time_local</remote-name>
+              <remote-type>134</remote-type>
+              <local-name>[start_time_local]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start_time_local</remote-alias>
+              <ordinal>14</ordinal>
+              <family>greg_runs.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Hour</aggregation>
+              <approx-count>98</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='greg_runs.csv' id='greg_runs.csv_ABB09D2420364963A9AB57CCDC060F4C'>
+            <properties context=''>
+              <relation connection='textscan.1wierb31j4ua0s1gqt4uy1nl8hq6' name='greg_runs.csv' table='[/Users/gregoryknapp/Code/DataScience/MyRunningData/data/greg_runs#csv]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:O100:no:A1:O100:1' header='yes' locale='ja' separator=','>
+                  <column datatype='string' name='name' ordinal='0' />
+                  <column datatype='real' name='distance' ordinal='1' />
+                  <column datatype='real' name='total_elevation_gain' ordinal='2' />
+                  <column datatype='real' name='average_speed' ordinal='3' />
+                  <column datatype='real' name='max_speed' ordinal='4' />
+                  <column datatype='real' name='elev_high' ordinal='5' />
+                  <column datatype='real' name='elev_low' ordinal='6' />
+                  <column datatype='integer' name='pr_count' ordinal='7' />
+                  <column datatype='real' name='distance_miles' ordinal='8' />
+                  <column datatype='datetime' name='moving_time' ordinal='9' />
+                  <column datatype='datetime' name='elapsed_time' ordinal='10' />
+                  <column datatype='boolean' name='is_gym_run' ordinal='11' />
+                  <column datatype='string' name='workout_type' ordinal='12' />
+                  <column datatype='date' name='start_date_local' ordinal='13' />
+                  <column datatype='datetime' name='start_time_local' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='greg_runs' name='federated.1r7ba0j1oeb9n61d9cets1ifctlz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r7ba0j1oeb9n61d9cets1ifctlz'>
+            <column caption='Average Speed' datatype='real' name='[average_speed]' role='measure' type='quantitative' />
+            <column caption='Start Date Local' datatype='date' name='[start_date_local]' role='dimension' type='ordinal' />
+            <column-instance column='[average_speed]' derivation='Sum' name='[sum:average_speed:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start_date_local]' derivation='Year-Trunc' name='[tyr:start_date_local:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.1r7ba0j1oeb9n61d9cets1ifctlz].[tyr:start_date_local:ok]' />
+              <wedge-size column='[federated.1r7ba0j1oeb9n61d9cets1ifctlz].[sum:average_speed:qk]' />
+              <size column='[federated.1r7ba0j1oeb9n61d9cets1ifctlz].[sum:average_speed:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{EA6624B6-262B-46CB-A5BC-CAFC9D75BA24}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{57A61F84-13D3-47DA-8E19-A1D50A7A9DDF}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1r7ba0j1oeb9n61d9cets1ifctlz].[tyr:start_date_local:ok]' type='color' />
+            <card pane-specification-id='0' param='[federated.1r7ba0j1oeb9n61d9cets1ifctlz].[sum:average_speed:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1r7ba0j1oeb9n61d9cets1ifctlz].[:Measure Names]</field>
+            <field>[federated.1r7ba0j1oeb9n61d9cets1ifctlz].[tyr:start_date_local:ok]</field>
+            <field>[federated.1r7ba0j1oeb9n61d9cets1ifctlz].[yr:start_date_local:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4E70B860-B129-4C07-B0C2-6D90B4B3C057}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{826FB636-E14F-4846-A9CB-8AFEE39FB4BE}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='328' name='Sheet 1' width='328'>
+      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
+      EoGMEae9U/mepbZnIGXyPUu5SdcYEciY4a0QGo3n1NgRyJjJ91wpp22y7RlICadtsvI9b7c9
+      I7EIZNy4RRUuuNn2CqRE4YKbOUtrHAhkDBUXfYgnNcbPLaq46MO2VyQagYwhZ8IZKlzIq0iM
+      T+HC98qZcLrtGYlGIGOqeMmtHPKDscu5Ki6+1faKxCOQMZWbPFOF8/n2EWNTmHeTcpNm2J6R
+      eAQyxopLbpMc/hNhlJyciotvs70iFfi/L8ZyHWerMJczIDA6hXOvVa7jLNszUoFAxlzxso9L
+      bsH2DCSFWxh5zqAhCGTM5Tpnq3jJLbZnICGKl9yqXMfZtmekBoFMgOKSjyo3eabtGYi53ORu
+      FZfcbntGqhDIBHDybSotW2F7BmKudNUKOfk22zNShUAmRP6cq5Sfw5V+cGr5OcuUn7PM8or0
+      IZAJUlr2BW66hDfKl3iH0SQEMkFyU7pVWvJR2zMQM6UlH1NuSrftGalEIBOmuPg2ud0Lbc9A
+      TLjdi1Rc/BHbM1KLQCZNzlX7dXfIae+0vQSWOe2dar/uDs7ZbyICmUDOxOlqW77S9gxY1rZ8
+      pZyJ02zPSDUCmVD52Vdwvm2GFZfcrvzsK2zPSD0CmWClP/2U3JkX256BFnO7F6p02Sdtz8gE
+      AplkOVft19/JHesyhM8dW4tAJpwzcbra33MPx0dmQb6k9pu+KWfidNtLMoNApoA74yK133AX
+      145Ms5yr9hvvljvjIttLMoX/o1Ii33Ol2q75iu0ZaJK2q7+i/Gxu39pqBDJFCuffqNKVn7M9
+      Aw1WWvp5Fc6/wfaMTCKQKVNc9KGRG34hFYqLP6Liwr+yPSOzCGQKld7+GRXmv8/2DIxTYf77
+      Vbri07ZnZJoTRVFkewSaIVJ1w12qbbnP9hCMQXHxR34bR8f2lEwjkClX2/qgquvvsD0Do1Ba
+      +nneVscEgcwAb/caVR77ohQGtqfgzeRctV39Fb6QiRECmRF+73qVH/mM5FdtT8Gp5Etqv/Fu
+      DuWJGQKZIcEr21V++BOKKsdsT8HrOG0dan/PPRwEHkMEMmOik4dUfvSzCvqftT0FGrnwRPt1
+      d3D6YEwRyCwKA1U3flO1zd+2vSTTiktuH7kqDxeeiC0CmWF+31OqrF2hqDxge0qmOO2dalu+
+      kus5JgCBzLjo5GGVf/I5BQe22p6SCW73ot++peZK4ElAICGFgWrP3Kvq5lV8y90s+ZJKSz42
+      coMt3lInBoHE74THD6i67qvy9z5pe0qq5OcsU2nZCm7NmkAEEm/g712n6hMrFQ4esD0l0XKT
+      u1W6aoXyc5bZnoIxIpA4pcivqLb52yPncgee7TnJ4hZUvORWFZfcLiffZnsNxoFA4k2FA32q
+      /eJf5L34UykKbc+JNyenwrnXqnjZx5XrONv2GjQAgURdwmP7VNt8r7zdqzmn+w/lXBXm3aTi
+      4tuU6zjL9ho0EIHEqISD/aptuV/ejh9KQc32HLvcoorz36fCJbcoN2mG7TVoAgKJMYmGXlVt
+      64Pydj6kqDJoe05LOW2TVbjgZhUXfUjOhDNsz0ETEUiMT1CT37te3q418nuflELf9qLmyOWV
+      71mqwrx3K9/zdskt2l6EFiCQaJioPCB/z1p5u9YoOPic7TkN4XYtGIniucvltHXYnoMWI5Bo
+      inCgT/6ex+Tv3zRy5aCkfF6ZL8md8TblZ12q/NyrleucbXsRLCKQaD6/quDgc/J/vUnB/k0j
+      ry7j8k14zpXbtUDurEuVP+tSuV0LpHzJ9irEBIFEy0XesIL+ZxUe3q3waK/CgT6FA71N/7LH
+      aZusXGePcp2zlZvao9y08+XOvFhO4bSmPi6Si0AiJiJF5WMKj+4dCebRXkVDrymqHFNUPjby
+      R68sBTVFQe33Z/e4BTluUXKLcgrtcto65LR3jPxxwukjIezsUW5qj5z2DnGXQIwGgQQAg5zt
+      AQAQVwQSAAwIJAAYEEgAMCCQAGBAIAHAgEACgAGBBAADAgkABgQSAAwIJAAYEEgAMCCQAGBA
+      IAHAgEACgAGBBAADAgkABgQSAAwIJAAYEEgAMCCQAGBAIAHAgEACgAGBBAADAgkABgQSAAwI
+      JAAYEEgAMCCQAGBAIAHAgEACgAGBBAADAgkABgQSAAwIJAAYEEgAMCCQAGBAIAHAgEACgAGB
+      BAADAgkABgQSAAwIJAAYEEgAMCCQAGBAIAHAgEACgAGBBAADAgkABgQSAAwIJAAYEEgAMCCQ
+      AGBAIAHAgEACgAGBBAADAgkABgQSAAwIJAAYEEgAMCCQAGBAIAHAgEACgAGBBAADAgkABgQS
+      AAwIJAAYEEgAMCCQAGBAIAHAgEACgAGBBACD/wcxCqKGFbx4zgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='384' name='Sheet 2' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFXUlEQVR4nO3VMQEAIAzAMMC/5yFjRxMF/XpnZg4AOW87AIAdBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEfFxoG/IiMv0YAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

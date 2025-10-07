@@ -206,3 +206,6 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Misc specific files
+.~RunningDataVisualizations__87246.twbr
